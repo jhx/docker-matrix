@@ -5,5 +5,8 @@
 FROM centos:centos6
 MAINTAINER Doc Walker <doc.walker@jameshardie.com>
 
+# update packages
+RUN yum update -y
+
 # expose http, https ports
 EXPOSE 80 443
